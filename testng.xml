@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+    <test name="Chrome Test">
+        <parameter name="Port" value="5555"/>
+        <classes>
+
+            <class name="org.example.RegisterUser"/>
+            <class name="org.example.LoginValid"/>
+            <class name="org.example.LoginInvalid"/>
+            <class name="org.example.AddToCart"/>
+            <class name="org.example.Search"/>
+            <class name="org.example.Review"/>
+
+
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="Microsoft Edge Test">
+        <parameter name="Port" value="6666"/>
+        <classes>
+
+            <class name="org.example.RegisterUser"/>
+            <class name="org.example.LoginValid"/>
+            <class name="org.example.LoginInvalid"/>
+            <class name="org.example.AddToCart"/>
+            <class name="org.example.Search"/>
+            <class name="org.example.Review"/>
+
+
+
+        </classes>
+    </test>
+</suite> <!-- Suite -->
+
+
+
+
+
+
+
+
+
+
